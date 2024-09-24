@@ -1,0 +1,171 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , 'sans-serif';
+}
+
+.main{ 
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(src/images/t2.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 10px 10%;
+    overflow: hidden;
+}
+
+.navbar { 
+    background-color: antiquewhite;
+    z-index: 2;
+    margin-top: 2%;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;  
+    box-sizing: border-box;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.15),
+                    0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure the navbar ul occupies full width and aligns items to the right */
+.navbar ul {
+    list-style-type: none;  /* Removes bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex;          /* Use flexbox */
+    justify-content: flex-end; /* Align items to the right */
+    gap: 20px;              /* Adds spacing between the list items */
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    text-decoration: none;  /* Remove underline */
+    color: black;           /* Text color */
+    padding: 10px;          /* Adds padding to links */
+}
+
+.content{ 
+    margin-top: 10%;
+    max-width: 600px;
+}
+
+.content h1{ 
+    font-size: 70px;
+    color: #222;
+}
+
+.content p{ 
+    margin:  10px 0 30px;
+    color: #333;
+}
+
+.myImage{ 
+    width: 530px;
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+}
+
+.yellowBlock {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between; /* To position text on the left, image on the right */
+    align-items: flex-end; /* Align items at the bottom */
+    background-color: yellow;
+    padding: 20px;
+    position: relative; /* So the image stays within the block */
+    overflow: hidden; /* Prevents overflow outside the block */
+    height: 600px;
+}
+
+.content {
+    margin-right: 20px; /* Space between content and image */
+}
+
+.myImage {
+    max-height: 90%; /* Ensure the image height does not exceed yellow block */
+    width: auto; /* Maintain aspect ratio */
+    display: block;
+}
+
+.aboutMeBlock {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 0.5fr; /* Divide into 3 equal columns */
+    padding: 20px;
+    text-align: center;
+    background-color: aquamarine;
+}
+
+.aboutMeBlock h1 {
+    grid-column: 1 / 4; /* Make the heading span all three columns */
+    margin-bottom: 20px;
+}
+
+.aboutMeBlock p {
+    grid-column: 2 / 3; /* Place the <p> tag in the center column */
+    text-align: center; /* Center the text inside the <p> */
+}
+
+.timeline{
+    position: relative;
+    /* max-width: 1200px; */
+    /* margin: 100px auto; */
+    /* background: rgba(0, 0, 0, 0.9) */
+}
+
+.container{ 
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    /* background: rgba(0, 0, 0, 0.4) */
+}
+
+.textbox{ 
+    padding: 20px 30px;
+    background: white;
+    position: relative; 
+    border-radius: 6px; 
+    font-size: 15px;
+    /* border: solid blue; */
+}
+
+.left-container{ 
+    left: 0;
+}
+
+.right-container{ 
+    left: 50%;
+}
+
+.circle{ 
+   background-color: white;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    border-radius: 50%;
+    right: -10px;
+    top: 32px;
+    z-index: 1;
+}
+
+.right-container .circle{ 
+    left: -10px;
+}
+
+.timeline::after{ 
+    content:"";
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: white;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: 0;
+}
