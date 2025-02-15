@@ -3,7 +3,7 @@
 ## Overview
 This is a simple portfolio website built using **HTML and CSS**. It showcases my projects, skills, and contact information.
 
-![Portfolio](Portfolio\src\images\portfolio.png)
+![Portfolio](src/images/portfolio.png)
 
 ## Features
 - **About Me** – My name is Snehasish Sen. I am currently a 4th year IT Student currently pursuing BTech from Dr. B.C. Roy Engineering College. 
