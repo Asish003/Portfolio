@@ -33,12 +33,12 @@
 }
 
 .navbar ul {
-    list-style-type: none;  /* Removes bullet points */
+    list-style-type: none;  
     margin: 0;
     padding: 0;
-    display: flex;          /* Use flexbox */
-    justify-content: flex-end; /* Align items to the right */
-    gap: 20px;              /* Adds spacing between the list items */
+    display: flex;         
+    justify-content: flex-end;
+    gap: 20px;              
 }
 
 .navbar li {
@@ -46,9 +46,9 @@
 }
 
 .navbar a {
-    text-decoration: none;  /* Remove underline */
-    color: white;           /* Text color */
-    padding: 10px;          /* Adds padding to links */
+    text-decoration: none; 
+    color: white;           
+    padding: 10px;          
 }
 
 .content{ 
@@ -76,13 +76,13 @@
 .yellowBlock {
     margin-top: 20px;
     display: flex;
-    justify-content: space-between; /* To position text on the left, image on the right */
-    align-items: flex-end; /* Align items at the bottom */
-    background-color: yellow;
+    justify-content: space-between; 
+    align-items: flex-end; 
+    background-color: rgb(242, 246, 247);
     padding: 20px;
-    position: relative; /* So the image stays within the block */
-    overflow: hidden; /* Prevents overflow outside the block */
-    height: 600px;
+    position: relative; 
+    overflow: hidden; 
+    height: 400px;
     border-radius: 10px;
     z-index: 2;
     box-sizing: border-box;
@@ -91,49 +91,45 @@
 }
 
 .content {
-    margin-right: 20px; /* Space between content and image */
+    margin-right: 20px; 
 }
 
 .myImage {
-    max-height: 90%; /* Ensure the image height does not exceed yellow block */
-    width: auto; /* Maintain aspect ratio */
+    max-height: 90%;
+    width: auto; 
     display: block;
 }
 
 .aboutMeBlock { /*----------------------------1----------------------------*/
     margin-top: 2.5%;
     display: grid;
-    grid-template-columns: 0.5fr 2fr 0.5fr; /* Divide into 3 equal columns */
+    grid-template-columns: 0.5fr 2fr 0.5fr; 
     padding: 20px;
     text-align: center;
     color: white;
-    /* background-color: aquamarine;  */
+   
 }
 
 .aboutMeBlock h1 {
-    grid-column: 1 / 4; /* Make the heading span all three columns */
+    grid-column: 1 / 4; 
     margin-bottom: 20px;
 }
 
 .aboutMeBlock p {
-    grid-column: 2 / 3; /* Place the <p> tag in the center column */
-    text-align: center; /* Center the text inside the <p> */
+    grid-column: 2 / 3; 
+    text-align: center; 
 }
 
 .timeline{ /*----------------------------2----------------------------*/
     margin-top: 2.5%;
     position: relative;
-    /* max-width: 1200px; */
-    /* margin: 100px auto; */
-    /* background: rgba(0, 0, 0, 0.9) */
-    /* background: blue;  */
 }
 
 .container{ 
     padding: 10px 50px;
     position: relative;
     width: 50%;
-    /* background: rgba(0, 0, 0, 0.4) */
+   
 }
 
 .textbox{ 
@@ -142,7 +138,7 @@
     position: relative; 
     border-radius: 6px; 
     font-size: 15px;
-    /* border: solid blue; */
+   
 }
 
 .left-container{ 
@@ -184,7 +180,7 @@
     margin-top: 2.5%;
     display: flex;
     padding: 3rem;
-    /* background-color: aqua;  */
+    
 }
 
 .Certifications-head{ 
@@ -208,7 +204,7 @@
 }
 
 .card h1{
-    flex: 0 0 80%;               /* Takes 80% of the space */
+    flex: 0 0 80%;              
     text-align: left; 
 }
 
